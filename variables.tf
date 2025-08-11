@@ -9,3 +9,15 @@ variable "suffix" {
   type        = string
   default     = "mjl"
 }
+
+variable "AWS_ACCESS_KEY_ID" {
+  type        = string
+  description = "AWS Access Key ID for authentication"
+  sensitive   = true # Mark as sensitive to avoid logging
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  type        = string
+  description = "AWS Secret Access Key for authentication"
+  sensitive   = true # Mark as sensitive to avoid logging
+}
